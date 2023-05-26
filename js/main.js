@@ -90,14 +90,8 @@ let signButton = document.getElementById('sign_btn')
 
 function openMenu(){
     sideMenu.style = "left: 0;"
-    burger.style.display = "none"
-
-    if (signButton.style.display == "none"){
-        nav.style = "transform: translateX(110%);"
-    } else {
-        nav.style = "transform: translateX(70%);"
-    }
-    
+    burger.style.display = "none"    
+    nav.style = "transform: translateX(70%);"
 }
 
 function closeMenu(){
@@ -105,27 +99,3 @@ function closeMenu(){
     burger.style.display = "block"
     nav.style = "transform: translateX(0%);"
 }
-
-
-//wow animation settings
-
-// let polGallery = document.getElementsByClassName('pol_gallery')[0]
-// let img = document.getElementsByClassName('pol_block')
-
-// if (polGallery.style.display == "block"){
-//     img[0].classList.remove("slideInLeft")
-//     img[1].classList.remove("bounceInUp")
-//     img[2].classList.remove("slideInRight")
-// }
-
-// console.log(img[0])
-
-
-// let polGallery = document.querySelector(".pol_gallery");
-// let img = document.querySelectorAll(".pol_block");
-
-// if (window.getComputedStyle(polGallery).getPropertyValue("display") == "block") {
-//     img.forEach(function (element) {
-//         element.classList.remove("slideInLeft", "bounceInUp", "slideInRight");
-//     });
-// }

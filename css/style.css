@@ -45,6 +45,8 @@ body::-webkit-scrollbar-thumb {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #f7c85a;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 #side-menu ul {
@@ -105,18 +107,10 @@ nav {
   align-items: center;
 }
 
-.l_nav img {
-  transition: 0.5s;
-}
-
-.l_nav img:hover {
-  transform: scale(1.1);
-}
-
 .burger {
   color: white;
   font-size: 24px;
-  margin-right: 10px;
+  margin-right: 15px;
   cursor: pointer;
   display: none;
 }
@@ -324,7 +318,11 @@ nav li {
 section {
   min-height: 400px;
   background: white;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.addht {
+  min-height: 495px;
 }
 
 .sec {
@@ -874,7 +872,6 @@ textarea:valid {
 
   .customers_sec {
     min-height: 700px;
-    overflow-x: hidden;
   }
   .customers_sec::before {
     background: url(../img/Vector26.png) center/cover no-repeat;
@@ -946,6 +943,10 @@ textarea:valid {
     font-size: 32px;
   }
 
+
+  .addht {
+    min-height: 725px;
+  }
   .l_side h1 {
     width: 100%;
     font-size: 32px;
@@ -967,7 +968,7 @@ textarea:valid {
   }
 
   .sect {
-    padding: 150px 0 45px 0;
+    padding: 135px 0 45px 0;
   }
   .sect img {
     width: 100%;
@@ -1066,7 +1067,7 @@ textarea:valid {
     margin-top: 12px;
   }
   .sect {
-    padding: 150px 0 0 0;
+    padding: 100px 0 0 0;
   }
 
   .customers_sec {
@@ -1108,7 +1109,7 @@ textarea:valid {
 
   .burger {
     font-size: 22px;
-    margin-top: 4px;
+    margin-top: 3px;
   }
   .l_nav img {
     width: 130px;
@@ -1187,6 +1188,9 @@ textarea:valid {
     height: 2px;
   }
 
+  .addht {
+    min-height: 580px;
+  }
   .l_side h1 {
     font-size: 24px;
     margin: 35px 0 7px 0;
@@ -1241,10 +1245,10 @@ textarea:valid {
   }
 
   .sect {
-    padding: 50px 0 0 0;
+    padding: 0 0 35px 0;
   }
   .sect img {
-    width: 90%;
+    width: 70%;
   }
   .sect h1 {
     font-size: 24px;
@@ -1347,6 +1351,9 @@ textarea:valid {
   .customers_sec {
     min-height: 1000px;
   }
+  .addht {
+    min-height: 650px;
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -1358,6 +1365,9 @@ textarea:valid {
 @media screen and (max-width: 361px) {
   .r_main {
     height: 497px;
+  }
+  .addht {
+    min-height: 680px;
   }
 }
 
