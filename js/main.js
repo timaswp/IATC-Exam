@@ -86,12 +86,11 @@ contact[2].addEventListener('mouseleave', function() {
 let sideMenu = document.getElementById('side-menu')
 let burger = document.getElementsByClassName('burger')[0]
 let nav = document.getElementsByTagName('NAV')[0]
-let signButton = document.getElementById('sign_btn')
 
 function openMenu(){
     sideMenu.style = "left: 0;"
-    burger.style.display = "none"    
-    nav.style = "transform: translateX(70%);"
+    burger.style.display = "none"
+    nav.style = "transform: translateX(65%);"  
 }
 
 function closeMenu(){
