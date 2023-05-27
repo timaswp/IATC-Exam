@@ -50,35 +50,14 @@ function fade(n){
     }
 }
 
-
-// for (k = 0; k < 3; k++) {
-//     contact[k].addEventListener('mouseenter', function() {
-//         test(k+1)
-//     });
-//     contact[k].addEventListener('mouseleave', function() {
-//         fade(k+1)
-//     });
-// }
-
-contact[0].addEventListener('mouseenter', function() {
-    test(1)
-})
-contact[1].addEventListener('mouseenter', function() {
-    test(2)
-})
-contact[2].addEventListener('mouseenter', function() {
-    test(3)
-})
-
-contact[0].addEventListener('mouseleave', function() {
-    fade(1)
-})
-contact[1].addEventListener('mouseleave', function() {
-    fade(2)
-})
-contact[2].addEventListener('mouseleave', function() {
-    fade(3)
-})
+for (let k = 0; k < contact.length; k++) {
+    contact[k].addEventListener('mouseenter', function() {
+        test(k + 1)
+    })
+    contact[k].addEventListener('mouseleave', function() {
+        fade(k + 1)
+    })
+}
 
 
 //Adaptive Navbar
@@ -98,3 +77,19 @@ function closeMenu(){
     burger.style.display = "block"
     nav.style = "transform: translateX(0%);"
 }
+
+
+// email input bug fix
+
+let emailInput = document.querySelector("#email")
+let emailLabel = document.getElementsByClassName("form-input-placeholder")[1]
+
+emailInput.addEventListener('input', () => {
+    if (emailInput.value !== '') {
+      emailLabel.classList.add('label-active');
+      emailInput.classList.add('input-active')
+    } else {
+      emailLabel.classList.remove('label-active');
+      emailInput.classList.remove('input-active')
+    }
+  });

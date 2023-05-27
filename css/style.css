@@ -721,6 +721,12 @@ form {
   opacity: 1;
 }
 
+.label-active {
+  font-size: 75%;
+  transform: translate3d(0, -70%, 0);
+  opacity: 1;
+}
+
 .form-input {
   width: 446px;
   height: 48px;
@@ -732,7 +738,8 @@ form {
 }
 
 .form-input:focus,
-.form-input:valid {
+.form-input:valid,
+.input-active {
   outline: 1px solid #6c74f4;
   border: 1px solid #6c74f4;
   box-shadow: 3px 3px #adb2ff;
@@ -782,7 +789,8 @@ textarea:valid {
 #clipboard {
   position: fixed;
   bottom: 10px;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
 }
 
